@@ -601,3 +601,72 @@ a:not(.dropdown-item):hover,
 .o_notebook .nav-tabs {
   border-bottom: 1px solid rgba(123, 74, 154, 0.25) !important;
 }
+
+
+
+/* =========================
+   FIX: MODAL (Popup) look + close button
+   ========================= */
+
+.modal-header,
+.o_dialog .modal-header {
+  background: $brand !important;
+  color: #ffffff !important;
+  border-bottom: 0 !important;
+}
+
+/* Title text */
+.modal-header .modal-title,
+.o_dialog .modal-header .modal-title {
+  color: #ffffff !important;
+}
+
+/* Close (X) visible on purple */
+.modal-header .btn-close,
+.o_dialog .modal-header .btn-close,
+.modal-header .close,
+.o_dialog .modal-header .close {
+  filter: brightness(0) invert(1) !important;
+  opacity: 0.9 !important;
+}
+
+.modal-header .btn-close:hover,
+.o_dialog .modal-header .btn-close:hover {
+  opacity: 1 !important;
+}
+
+/* Modal body keep normal */
+.modal-body,
+.o_dialog .modal-body {
+  background: #ffffff !important;
+  color: #111827 !important;
+}
+
+/* Footer buttons spacing */
+.modal-footer,
+.o_dialog .modal-footer {
+  background: #ffffff !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Primary button in modal */
+.modal-footer .btn-primary,
+.o_dialog .modal-footer .btn-primary {
+  background: $brand !important;
+  border-color: $brand !important;
+  color: #ffffff !important;
+}
+
+.modal-footer .btn-primary:hover,
+.o_dialog .modal-footer .btn-primary:hover {
+  background: $brand_dark !important;
+  border-color: $brand_dark !important;
+}
+
+/* Secondary button */
+.modal-footer .btn-secondary,
+.o_dialog .modal-footer .btn-secondary {
+  background: #e5e7eb !important;
+  border-color: #e5e7eb !important;
+  color: #111827 !important;
+}
