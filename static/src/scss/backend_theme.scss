@@ -259,57 +259,18 @@ a:not(.dropdown-item):hover,
 }
 
 /* =========================
-   FORM & LIST ACCENTS
+   FORM VIEW ONLY – MATERIAL STYLE
+   (Keep Odoo17 layout intact)
    ========================= */
-.o_field_widget .o_input,
-.o_input,
-.o_field_widget textarea,
-.o_field_widget select {
-  border: none !important;
-  border-bottom: 2px solid rgba(123, 74, 154, 0.35) !important;
-  border-radius: 0;
-  background-color: transparent !important;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
 
-.o_field_widget .o_input:hover,
-.o_input:hover,
-.o_field_widget textarea:hover,
-.o_field_widget select:hover {
-  border-bottom-color: rgba(123, 74, 154, 0.6) !important;
-}
+/* Apply only inside FORM views - keep default Odoo 17 look by not overriding inputs */
 
-.o_field_widget input:focus,
-.o_input:focus {
-  border-bottom-color: $brand !important;
-  box-shadow: inset 0 -1px 0 0 $brand !important;
-}
-
-.o_field_widget .o_input[readonly],
-.o_field_widget input[readonly],
-.o_field_widget textarea[readonly],
-.o_field_widget select[readonly],
-.o_field_widget .o_input:disabled,
-.o_field_widget input:disabled,
-.o_field_widget textarea:disabled,
-.o_field_widget select:disabled {
-  border-bottom-color: rgba(123, 74, 154, 0.2) !important;
-  color: rgba(17, 24, 39, 0.7) !important;
-  opacity: 0.8;
-}
-
-.o_field_widget input::placeholder,
-.o_field_widget textarea::placeholder,
-.o_input::placeholder {
-  color: rgba(101, 58, 128, 0.7) !important;
-}
-
-.o_form_label {
+/* Labels */
+.o_form_view .o_form_label {
   color: $brand_dark !important;
   font-weight: 600;
 }
+
 
 /* =========================
    FIX: Control Panel / Breadcrumb bar theme
