@@ -565,3 +565,39 @@ a:not(.dropdown-item):hover,
 .o_dashboard .o_dashboard_graph .o_graph_title {
   color: $brand !important;
 }
+
+/* =========================
+   FIX: NOTEBOOK (Form Tabs) COLORS
+   ========================= */
+
+/* Base (inactive tabs) */
+.o_notebook .nav-tabs .nav-link,
+.o_notebook .nav-tabs button.nav-link {
+  background: transparent !important;
+  color: $brand !important;
+  border-color: transparent !important;
+}
+
+/* Hover (inactive) */
+.o_notebook .nav-tabs .nav-link:hover,
+.o_notebook .nav-tabs button.nav-link:hover {
+  background: rgba(123, 74, 154, 0.08) !important;
+  color: $brand_dark !important;
+}
+
+/* Active tab (only active should be brand bg) */
+.o_notebook .nav-tabs .nav-link.active,
+.o_notebook .nav-tabs .nav-link.active:hover,
+.o_notebook .nav-tabs .nav-link.active:focus,
+.o_notebook .nav-tabs button.nav-link.active,
+.o_notebook .nav-tabs button.nav-link.active:hover,
+.o_notebook .nav-tabs button.nav-link.active:focus {
+  background: $brand !important;
+  color: #ffffff !important;
+  border-color: $brand !important;
+}
+
+/* Tab bottom border line */
+.o_notebook .nav-tabs {
+  border-bottom: 1px solid rgba(123, 74, 154, 0.25) !important;
+}
